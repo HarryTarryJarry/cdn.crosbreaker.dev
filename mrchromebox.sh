@@ -1,7 +1,7 @@
 #!/bin/sh
 #skiddy mrchromebox for miniOS script
 cd /
-mount /dev/mmcblk0p3 /usb -o ro || /dev/mmcblk1p3 /usb -o ro
+mount /dev/mmcblk0p3 /usb -o ro || mount /dev/mmcblk1p3 /usb -o ro
 mount --bind /dev /usb/dev
 mount --bind /proc /usb/proc
 mount --bind /sys /usb/sys
